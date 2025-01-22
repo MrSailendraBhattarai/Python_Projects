@@ -1,4 +1,5 @@
 
+# Divisior of Given number
 class Divisior:
     # Divisior=[]
     def __init__(self,number):

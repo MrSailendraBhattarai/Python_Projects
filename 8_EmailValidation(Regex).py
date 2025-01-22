@@ -4,11 +4,14 @@
 
 import re
 
-condition="^[a-z]+[\._]?[a-z 0-9]+[@]\w+[.]\w{2,3}$"
+# Enhanced regex pattern to validate email addresses
+condition = r"^[a-zA-Z0-9._]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
 
-user_email=input("Enter Your E-mail : ")
+# Prompt user for email input
+user_email = input("Enter Your E-mail: ").strip()
 
-if re.search(condition,user_email):
+# Validate email
+if re.fullmatch(condition, user_email):
     print("Right E-mail")
 else:
     print("Wrong E-mail")
