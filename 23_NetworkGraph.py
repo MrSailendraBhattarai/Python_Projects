@@ -1,0 +1,21 @@
+
+#pip install networkx
+# Network Graph
+
+import networkx as nx
+import matplotlib.pyplot as plt
+
+G=nx.Graph()
+G.add_nodes_from(['A','B','C','D','E'])
+
+edges=[('A','B'),('A','C'),('B','C'),('B','D'),('C','E')]
+G.add_edges_from(edges)
+
+plt.figure(figsize=(8,6))
+
+nx.draw(G,with_labels=True,node_color='blue',
+        node_size=1000,edge_color='black',font_size=16, font_weight='bold')
+
+plt.title('Network Graph using Python')
+
+plt.show()
