@@ -2,17 +2,20 @@
 # pip install pillow
 # Image Mirroring
 
-from pillow import Image
+from PIL import Image
 
-Original=input('Enter Image Name : ')
+# Input image name
+Original = input('Enter Image Name : ')
 
-# Image.open(Original)
+# Open the original image
+img = Image.open(Original)
 
-img=Image.open(Original)
+# Create a mirrored version by flipping horizontally (left to right)
+Mirror = img.transpose(Image.FLIP_LEFT_RIGHT)
 
-Mirror=img.transpose(Image.FLIP_LEFT_RIGHT)
-Mirrored='Mirror.png'
-
+# Save the mirrored image
+Mirrored = 'Mirrored_' + Original
 Mirror.save(Mirrored)
 
-Image.open(Mirrored)
+# Open and display the mirrored image
+Mirror.show()

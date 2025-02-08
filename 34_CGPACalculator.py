@@ -1,4 +1,5 @@
-# Dictionary to store grade values
+
+# Cgpa Calculator
 grade_points = {
     "A+": 4.00, "A": 3.75, "B+": 3.50, "B": 3.00,
     "C": 2.50, "D": 1.75, "F": 0.00
