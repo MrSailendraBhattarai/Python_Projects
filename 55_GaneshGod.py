@@ -184,9 +184,6 @@ goto(0,0)
 #borderrrr
 tur.color("deep sky blue")
 tur.setposition(-250,-300)
-# tur.write("Happy\n"
-#           "Ganesh\n"
-#           "Chaturthi",font=("arial",20,"normal"),align="left")
 
 goto(-240,420)
 tur.right(90)
